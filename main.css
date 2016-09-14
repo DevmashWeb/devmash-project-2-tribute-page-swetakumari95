@@ -1,0 +1,160 @@
+body{
+    background: white;
+    font-family: "Comfortaa", cursive;
+    margin: 0px;
+}
+
+#wrapper{
+    background: lightgrey;
+    margin: 0em auto;
+    width: 95%;
+    border-radius: 7px;
+}
+
+#header{
+    text-align: center;    
+}
+
+#header h1{
+    padding-top: 1em;
+}
+
+#header h2{
+    margin-bottom: em;
+}
+
+#pic_desc{
+    background: white;
+    border-radius: 5px;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+#pic_desc img{
+    width: 100%;
+}
+
+#pic_desc p{
+    text-align: center;
+    margin: 0.3em 0.5em 0.8em 0.5em;
+    font-size: 0.9em;
+}
+
+#head_timeline{
+    margin: 0.5em;
+    text-align: center;
+}
+
+.timeline ul li{
+    list-style-type: none;
+    position: relative;
+    width: 0.5em;
+    margin: 0 auto;
+    background: grey;
+}
+
+.timeline ul li div time{
+    display: block;
+    font-weight: bold; 
+}
+
+.timeline ul li:nth-child(even) div{
+    text-align: right;
+}
+
+.timeline ul li::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: white;
+}
+
+.timeline ul li div{
+    position: relative;
+    bottom: 0;
+    width: 30em;
+    padding: 1em;
+    background: white;
+    border-radius: 0.5em;
+}
+
+.timeline ul li div::before{
+    content: '';
+    position: absolute;
+    bottom: 0.5em;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div{
+    left: 3em;
+}
+
+.timeline ul li:nth-child(odd) div::before{
+    left: -1em;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -34.5em;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -1em;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent white;
+}
+
+#quote{
+    background: white;
+    border-radius: 5px;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+#quote_head{
+    margin: 0.3em;
+    text-align: center;
+}
+
+#quote_footer{
+    margin: 1em;
+    color: darkslategrey;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+h4{
+    margin: 1em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+h4 a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+h4 a:hover{
+    color: slategrey;
+}
+
+h4 a:active{
+    color: darkslategrey;
+}
+
+#footer{
+    text-align: center;
+    font-size: 0.7em;
+}
+
+#footer span{
+    font-size: 1.5em;
+}
